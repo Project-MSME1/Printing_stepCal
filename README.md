@@ -72,3 +72,106 @@ npm run build
 | :--- | :--- | :--- |
 | `admin` | `admin123` | Lead Manufacturing Engineer |
 | `jasim` | `admin123` | Senior Operator |
+# Django Backend
+
+## Requirements
+
+Make sure Python is installed.
+
+Check Python:
+
+```bash
+python --version
+```
+
+## Setup
+
+### 1. Go to backend folder
+
+```bash
+cd backend
+```
+
+### 2. Create virtual environment
+
+```bash
+python -m venv venv
+```
+
+### 3. Activate virtual environment
+
+### Windows PowerShell
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+### Windows CMD
+
+```cmd
+venv\Scripts\activate
+```
+
+### Mac/Linux
+
+```bash
+source venv/bin/activate
+```
+
+## Install Dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+## Run Database Migrations
+
+```bash
+python manage.py migrate
+```
+
+## Run Backend Server
+
+```bash
+python manage.py runserver
+```
+
+The backend will run at:
+
+```text
+http://127.0.0.1:8000/
+```
+
+## Stop Server
+
+Press:
+
+```text
+CTRL + C
+```
+
+## Common Commands
+
+Create migrations:
+
+```bash
+python manage.py makemigrations
+```
+
+Apply migrations:
+
+```bash
+python manage.py migrate
+```
+
+Create Django app:
+
+```bash
+python manage.py startapp app_name
+```
+
+Create admin user:
+
+```bash
+python manage.py createsuperuser
+```
